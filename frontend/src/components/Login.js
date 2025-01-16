@@ -19,7 +19,7 @@ function Login() {
         const data = await response.json();
         console.log('Login exitoso:', data);
       } else {
-        console.error('Error en el login');
+        console.error('Error en el login', response.status);
       }
     } catch (error) {
       console.error('Error en la conexión:', error);
